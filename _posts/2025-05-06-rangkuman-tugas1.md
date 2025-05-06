@@ -1,9 +1,9 @@
 ---
-title: test test ji hehee
-date: 2025-05-05 HH:MM:SS +/-TTTT
+title: Rangkuman DAA Tugas 1
+date: 2025-05-05 07:30:00 +0800
 categories: [Desain Analisis Algoritma, Tugas 1]
-tags: [testji iyya]     # TAG names should always be lowercase
-description: Saya cuma coba coba sih
+tags: [daa, rangkuman]
+description: Rangkuman materi tugas 1 DAA
 published: true
 ---
 
@@ -17,4 +17,3 @@ Contoh algoritma brute force: pencarian linear, brute force string matching.
 Contoh divide and conquer: merge sort, quick sort.
 
 ... (lanjutkan isi sesuai tugas)
-babkalakksgdjagsj
