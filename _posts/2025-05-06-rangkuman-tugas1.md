@@ -21,7 +21,7 @@ description: Rangkuman materi Kelompok 1
 
 
 **Implementasi Kode :**
-```c++
+```cpp
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -70,7 +70,7 @@ int main() {
 ```
 **Output Kode :**
 
-```Output
+```txt
 
 Aktivitas yang terpilih: A1 A4 A5
 
