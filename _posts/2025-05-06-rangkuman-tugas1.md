@@ -4,16 +4,17 @@ date: 2025-05-05 07:30:00 +0800
 categories: [Desain Analisis Algoritma, Tugas 1]
 tags: [daa, rangkuman]
 description: Rangkuman materi tugas 1 DAA
-published: true
 ---
 
-## Rangkuman Materi
+## Brute Force
 
-Pada tugas 1 ini, dibahas mengenai analisis algoritma brute force dan divide and conquer.  
-Brute force adalah pendekatan langsung yang mencoba semua kemungkinan solusi.  
-Divide and conquer memecah masalah besar menjadi submasalah yang lebih kecil, menyelesaikan masing-masing, lalu menggabungkannya kembali.
+**Brute Force** adalah pendekatan langsung untuk menyelesaikan masalah.
 
-Contoh algoritma brute force: pencarian linear, brute force string matching.  
-Contoh divide and conquer: merge sort, quick sort.
+### Contoh Kode:
+```python
+def linear_search(arr, target):
+    for i in range(len(arr)):
+        if arr[i] == target:
+            return i
+    return -1
 
-... (lanjutkan isi sesuai tugas)
