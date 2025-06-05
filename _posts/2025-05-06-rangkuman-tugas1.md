@@ -22,7 +22,6 @@ description: Rangkuman materi Kelompok 1
 
 **Implementasi Kode :**
 ```c++
-
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -68,10 +67,11 @@ int main() {
 
     return 0;
 }
-
 ```
+**Output Kode :**
 
 ```Output
+
 Aktivitas yang terpilih: A1 A4 A5
 
 ```
