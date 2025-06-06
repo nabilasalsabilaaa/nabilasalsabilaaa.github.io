@@ -51,36 +51,43 @@ Terdapat sebuah `String = "BCCABBDDAECCBBAEDDCC"`
 
 - Langkah kedua: Kemudian ambil dua node yang paling kecil dan gabungkan keduanya. `E + A = 5`
 
+```plaintext
        [5]
       /   \
   [E-2]  [A-3] [D-4]  [B-5] [C-6]
+```
 
 ---
 
 - Langkah ketiga: Kemudian, `ambil dua nilai terkecil dan gabungkan`. Di sini, `5` dan `4` adalah yang terkecil, jadi kita gabungkan menjadi `5 + D[4] = 9`
                 
+```plaintext
           [9]            
          /   \            
         /     \            
        [5]     \          
       /   \     \      
   [E-2]  [A-3] [D-4]  [B-5] [C-6]
+```
 
 ---
 
 - Langkah keempat: Kemudian, `ambil dua nilai terkecil dan gabungkan`. Di sini, `4` dan `6` adalah yang terkecil, jadi kita gabungkan menjadi `B[5] + C[6] = 11`
 
+```plaintext
           [9]            
          /   \            
         /     \            
        [5]     \          [11]
       /   \     \         /  \
   [E-2]  [A-3] [D-4]  [B-5] [C-6]
+```
 
 ---
 
 - Langkah kelima: Gabungkan `9` dan `11` = `20`
 
+```plaintext
                 [20]
                /    \
               /      \
@@ -93,11 +100,13 @@ Terdapat sebuah `String = "BCCABBDDAECCBBAEDDCC"`
        [5]     \          [11]
       /   \     \         /  \
   [E-2]  [A-3] [D-4]  [B-5] [C-6]
+```
 
 ---
 
 - Langkah keenam: Tandai sisi kiri dengan 0 dan sisi kanan dengan 1, kemudian lakukan transversal dari node akar ke setiap huruf. Misalkan kita ingin menuju A dari node akar `20`, maka jaeaknya akan menjadi `001`, untuk B menjadi `10` dan seterusnya.
 
+```plaintext
                 [20]
                /    \
               /      \
@@ -110,8 +119,10 @@ Terdapat sebuah `String = "BCCABBDDAECCBBAEDDCC"`
        [5]     \          [11]
    `0`/`1`\  `1`\      `0`/  \ `1`
   [E-2]  [A-3] [D-4]  [B-5] [C-6]
+```
 
 ---
+
 Untuk `A`, kita membutuhkan `3 bit`, untuk `B 2 bit`, `C 2 bit`, `D 2 bit` dan ke `E 3 bit`
 
 Untuk A jumlah = 3 jadi total nya 3 x 3 = 9 bit. Begitu seterusnya
