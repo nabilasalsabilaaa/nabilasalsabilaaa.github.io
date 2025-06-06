@@ -72,6 +72,8 @@ description: Kelompok 2 - Fractional Knapsack
 ### Solusi Optimal
 **Total Nilai Maksimum = 50 + 140 = 190**
 
+---
+
 ### Implementasi Kode 
 
 ```cpp
@@ -135,12 +137,18 @@ int main() {
 }
 ```
 
+---
+
 ### Kompleksitas Waktu
 `O(n log n)` untuk mengurutkan item berdasarkan rasio value/weight.
 `O(n)` untuk memasukkan item ke dalam tas.
+
+---
 
 ### Aplikasi
 1. Penjadwalan tugas dengan sumber daya terbatas
 2. Investasi dana ke beberapa proyek 
 3. Pengalokasian bandwidth di jaringan 
 4. Optimisasi logistik
+
+---

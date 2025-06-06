@@ -8,9 +8,12 @@ description: Kelompok 1 - Activity Selection Problem
 
 ## Activity Selection Problem
 
+### Pengantar
 **Activity Selection Problem** merupakan masalah optimasi klasik dalam ilmu komputer. Kita diberikan sejumlah aktivitas yang masing-masing didefinisikan dengan waktu mulai (`start`) dan waktu selesai (`finish`). Dua aktivitas dikatakan **kompatibel** jika tidak tumpang tindih, artinya salah satu aktivitas selesai sebelum aktivitas lainnya dimulai. Tujuannya adalah memilih sebanyak mungkin aktivitas yang **tidak saling tumpang tindih**.
 
-## Strategi Penyelesaiaan
+---
+
+### Strategi Penyelesaiaan
 
 **Algoritma Greedy** cocok digunakan untuk menyelesaikan masalah ini. Strateginya:
 - Pilih aktivitas yang selesai paling awal terlebih dahulu.
@@ -21,7 +24,9 @@ description: Kelompok 1 - Activity Selection Problem
 2. Pilih aktivitas pertama (aktivitas dengan waktu selesai paling awal)
 3. Untuk aktivitas berikutnya, pilih jika waktu mulainya lebih besar atau sama dengan waktu selesai aktivitas yang dipilih sebelumnya
 
-## Contoh Soal
+---
+
+### Contoh Soal
 
 |  Aktivitas  |  Mulai (s)  | Selesai(f) |
 |:-----------:|:-----------:|:----------:|
@@ -32,8 +37,9 @@ description: Kelompok 1 - Activity Selection Problem
 |      A5     |      8      |     9      |
 |      A6     |      5      |     9      |
 
+---
 
-## Langkah Solusi
+### Langkah Solusi
 
 - [x] Urutkan berdasarkan waktu selesai → `A1, A2, A3, A4, A5, A6`
 - [x] Pilih **A1**
@@ -45,7 +51,9 @@ description: Kelompok 1 - Activity Selection Problem
     
 **Solusi optimal:** `{A1, A4, A5}` (3 aktivitas)
 
-## Implementasi Kode 
+---
+
+### Implementasi Kode 
 ```cpp
 #include <iostream>
 #include <vector>
@@ -97,7 +105,9 @@ int main() {
 
 `Aktivitas yang terpilih: A1 A4 A5`
 
-## Analisis Kompleksitas
+---
+
+### Analisis Kompleksitas
 **1. Kompleksitas Waktu:**
     - Pengurutan aktivitas berdasarkan waktu selesai: `O(n log n)`
     - Pemilihan aktivitas: `O(n)`
@@ -107,9 +117,13 @@ int main() {
     - Menyimpan aktivitas: `O(n)`
     - Tidak memerlukan ruang tambahan yang signifikan selain untuk menyimpan input dan output
 
-## Aplikasi Dunia Nyata
+---
+
+### Aplikasi Dunia Nyata
 1. Jadwal ruang kelas
 2. Jadwal meeting
 3. Jadwal proses CPU
 4. Rute kendaraan
 5. Alokasi bandwidth jaringan
+
+---
