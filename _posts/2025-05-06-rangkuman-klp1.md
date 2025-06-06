@@ -6,7 +6,7 @@ tags: [DAA, rangkuman]
 description: Kelompok 1 - Activity Selection Problem
 ---
 
-## Pengantar Masalah
+## Activity Selection Problem
 
 **Activity Selection Problem** merupakan masalah optimasi klasik dalam ilmu komputer. Kita diberikan sejumlah aktivitas yang masing-masing didefinisikan dengan waktu mulai (`start`) dan waktu selesai (`finish`). Dua aktivitas dikatakan **kompatibel** jika tidak tumpang tindih, artinya salah satu aktivitas selesai sebelum aktivitas lainnya dimulai. Tujuannya adalah memilih sebanyak mungkin aktivitas yang **tidak saling tumpang tindih**.
 
@@ -24,7 +24,7 @@ description: Kelompok 1 - Activity Selection Problem
 ## Contoh Soal
 
 |  Aktivitas  |  Mulai (s)  | Selesai(f) |
-|----------------------------------------|
+|:-----------:|:-----------:|:----------:|
 |      A1     |      1      |     4      |
 |      A2     |      3      |     5      |
 |      A3     |      0      |     6      |
@@ -45,7 +45,7 @@ description: Kelompok 1 - Activity Selection Problem
     
 **Solusi optimal:** `{A1, A4, A5}` (3 aktivitas)
 
-**Implementasi Kode :**
+## Implementasi Kode 
 ```cpp
 #include <iostream>
 #include <vector>
@@ -97,17 +97,17 @@ int main() {
 
 `Aktivitas yang terpilih: A1 A4 A5`
 
-**Analisis Kompleksitas**
-1. Kompleksitas Waktu:
+## Analisis Kompleksitas
+**1. Kompleksitas Waktu:**
     - Pengurutan aktivitas berdasarkan waktu selesai: `O(n log n)`
     - Pemilihan aktivitas: `O(n)`
     - Total kompleksitas waktu: `O(n log n)`
 
-2. Kompleksitas Ruang:
+**2. Kompleksitas Ruang:**
     - Menyimpan aktivitas: `O(n)`
     - Tidak memerlukan ruang tambahan yang signifikan selain untuk menyimpan input dan output
 
-**Aplikasi Dunia Nyata**
+## Aplikasi Dunia Nyata
 1. Jadwal ruang kelas
 2. Jadwal meeting
 3. Jadwal proses CPU
