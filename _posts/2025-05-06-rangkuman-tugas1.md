@@ -19,6 +19,27 @@ description: Rangkuman materi Kelompok 1
 2. Pilih aktivitas pertama (aktivitas dengan waktu selesai paling awal)
 3. Untuk aktivitas berikutnya, pilih jika waktu mulainya lebih besar atau sama dengan waktu selesai aktivitas yang dipilih sebelumnya
 
+**Problem Solution**
++-------------+-------------+-----------+
+|  Aktivitas  |  Mulai (s)  |  Selesai  |
++-------------+-------------+-----------+
+|      A1     |      1      |     4     |
+|      A2     |      3      |     5     |
+|      A3     |      0      |     6     |
+|      A4     |      5      |     7     |
+|      A5     |      8      |     9     |
+|      A6     |      5      |     9     |
++-------------+-------------+-----------+
+
+**Langkah Solusi**
+1. **Urutkan** berdasarkan waktu selsai: ```[A1, A2, A3, A4, A5, A6]```
+2. **Pilih A1** (selesai paling awal)
+3. **Iterasi:**
+    - A2, A3: *Tumpang tindih* (❌)
+    - A4: *Kompatibel* (✔️) -> ```{A1, A4}```
+    - A5: *Kompatibel* (✔️) -> ```{A1, A4, A5}```
+    - A6: *Tumpang tindih* (❌)
+**Solusi optimal:** ```{A1, A4, A5}``` (3 aktivitas)
 
 **Implementasi Kode :**
 ```cpp
@@ -71,7 +92,22 @@ int main() {
 **Output Kode :**
 
 ```txt
-
 Aktivitas yang terpilih: A1 A4 A5
-
 ```
+
+**Analisis Kompleksitas**
+1. Kompleksitas Waktu:
+    - Pengurutan aktivitas berdasarkan waktu selesai: O(n log n)
+    - Pemilihan aktivitas: O(n)
+    - Total kompleksitas waktu: O(n log n)
+
+2. Kompleksitas Ruang:
+    - Menyimpan aktivitas: O(n)
+    - Tidak memerlukan ruang tambahan yang signifikan selain untuk menyimpan input dan output
+
+**Aplikasi Dunia Nyata**
+1. Jadwal ruang kelas
+2. Jadwal meeting
+3. Jadwal proses CPU
+4. Rute kendaraan
+5. Alokasi bandwidth
