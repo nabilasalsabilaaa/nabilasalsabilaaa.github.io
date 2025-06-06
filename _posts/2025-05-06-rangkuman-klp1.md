@@ -3,7 +3,7 @@ title: Rangkuman Desain dan Analisis Algoritma
 date: 2025-05-05 07:30:00 +0800
 categories: [Desain dan Analisis Algoritma]
 tags: [DAA, rangkuman]
-description: Rangkuman materi Kelompok 1
+description: Rangkuman Materi Kelompok 1
 ---
 
 ## Activity Selection Problem
@@ -20,9 +20,9 @@ description: Rangkuman materi Kelompok 1
 3. Untuk aktivitas berikutnya, pilih jika waktu mulainya lebih besar atau sama dengan waktu selesai aktivitas yang dipilih sebelumnya
 
 **Problem Solution**
-+-------------+-------------+-----------+
+-----------------------------------------
 |  Aktivitas  |  Mulai (s)  |  Selesai  |
-+-------------+-------------+-----------+
+-----------------------------------------
 |      A1     |      1      |     4     |
 |      A2     |      3      |     5     |
 |      A3     |      0      |     6     |
@@ -39,6 +39,7 @@ description: Rangkuman materi Kelompok 1
     - A4: *Kompatibel* (✔️) -> ```{A1, A4}```
     - A5: *Kompatibel* (✔️) -> ```{A1, A4, A5}```
     - A6: *Tumpang tindih* (❌)
+    
 **Solusi optimal:** ```{A1, A4, A5}``` (3 aktivitas)
 
 **Implementasi Kode :**
@@ -91,9 +92,7 @@ int main() {
 ```
 **Output Kode :**
 
-```txt
-Aktivitas yang terpilih: A1 A4 A5
-```
+```Aktivitas yang terpilih: A1 A4 A5```
 
 **Analisis Kompleksitas**
 1. Kompleksitas Waktu:
