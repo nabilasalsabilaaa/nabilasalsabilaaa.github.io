@@ -3,7 +3,7 @@ title: Rangkuman Desain dan Analisis Algoritma
 date: 2025-06-06 14:50:00 +0800
 categories: [Desain dan Analisis Algoritma]
 tags: [DAA, rangkuman]
-description: Kelompok 1 - Huffman Coding
+description: Kelompok 3 - Huffman Coding
 ---
 
 ## Huffman Coding
@@ -45,7 +45,9 @@ Terdapat sebuah `String = "BCCABBDDAECCBBAEDDCC"`
 
 - Langkah pertama: Urutkan jumlah kemunculan huruf dari yang terkecil ke yang terbesar
 
+```plaintext
   [E-2]  [A-3] [D-4]  [B-5] [C-6]
+```
 
 ---
 
@@ -60,7 +62,7 @@ Terdapat sebuah `String = "BCCABBDDAECCBBAEDDCC"`
 ---
 
 - Langkah ketiga: Kemudian, `ambil dua nilai terkecil dan gabungkan`. Di sini, `5` dan `4` adalah yang terkecil, jadi kita gabungkan menjadi `5 + D[4] = 9`
-                
+
 ```plaintext
           [9]            
          /   \            
