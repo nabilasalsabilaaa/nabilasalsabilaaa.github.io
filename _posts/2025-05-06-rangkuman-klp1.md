@@ -3,44 +3,47 @@ title: Rangkuman Desain dan Analisis Algoritma
 date: 2025-05-05 07:30:00 +0800
 categories: [Desain dan Analisis Algoritma]
 tags: [DAA, rangkuman]
-description: Rangkuman Materi Kelompok 1
+description: Kelompok 1 - Activity Selection Problem
 ---
 
-## Activity Selection Problem
+## Pengantar Masalah
 
-**Activity Selection Problem** merupakan masalah optimasi klasik dalam ilmu komputer. Kita diberikan sejumlah aktivitas yang masing-masing didefinisikan dengan waktu mulai (s) dan waktu selesai (f). Dua aktivitas dikatakan kompatibel jika mereka tidak tumpang tindih secara waktu,artinya salah satu aktivitas selesai sebelum aktivitas lainnya dimulai. Tantangannya adalah menentukan subset terbesar dari aktivitas yang semuanya kompatibel satu sama lain.
+**Activity Selection Problem** merupakan masalah optimasi klasik dalam ilmu komputer. Kita diberikan sejumlah aktivitas yang masing-masing didefinisikan dengan waktu mulai (`start`) dan waktu selesai (`finish`). Dua aktivitas dikatakan **kompatibel** jika tidak tumpang tindih, artinya salah satu aktivitas selesai sebelum aktivitas lainnya dimulai. Tujuannya adalah memilih sebanyak mungkin aktivitas yang **tidak saling tumpang tindih**.
 
-**Algoritma Greedy** adalah strategi pemecahan masalah optimasi yang bekerja dengan membuat pilihan yang tampak paling baik pada setiap langkah, dengan harapan rangkaian pilihan ini akan mengarah pada solusi yang optimal secara keseluruhan.
+## Strategi Penyelesaiaan
 
-**Algoritma Activity Selection Problem** menggunakan pendekatan greedy dengan memilih aktivitas berdasarkan waktu selesai (finish time). Ide kuncinya adalah dengan memilih aktivitas yang selesai paling awal, kita memaksimalkan waktu tersisa untuk aktivitas lainnya.
+**Algoritma Greedy** cocok digunakan untuk menyelesaikan masalah ini. Strateginya:
+- Pilih aktivitas yang selesai paling awal terlebih dahulu.
+- Aktivitas selanjutnya dipilih jika waktu mulainya tidak tumpang tindih dengan aktivitas terakhir yang dipilih.
 
 **Step :**
 1. Urutkan semua aktivitas berdasarkan waktu selesai (finish time)
 2. Pilih aktivitas pertama (aktivitas dengan waktu selesai paling awal)
 3. Untuk aktivitas berikutnya, pilih jika waktu mulainya lebih besar atau sama dengan waktu selesai aktivitas yang dipilih sebelumnya
 
-**Problem Solution**
------------------------------------------
-|  Aktivitas  |  Mulai (s)  |  Selesai  |
------------------------------------------
-|      A1     |      1      |     4     |
-|      A2     |      3      |     5     |
-|      A3     |      0      |     6     |
-|      A4     |      5      |     7     |
-|      A5     |      8      |     9     |
-|      A6     |      5      |     9     |
-+-------------+-------------+-----------+
+## Contoh Soal
 
-**Langkah Solusi**
-1. **Urutkan** berdasarkan waktu selsai: ```[A1, A2, A3, A4, A5, A6]```
-2. **Pilih A1** (selesai paling awal)
-3. **Iterasi:**
-    - A2, A3: *Tumpang tindih* (❌)
-    - A4: *Kompatibel* (✔️) -> ```{A1, A4}```
-    - A5: *Kompatibel* (✔️) -> ```{A1, A4, A5}```
-    - A6: *Tumpang tindih* (❌)
+|  Aktivitas  |  Mulai (s)  | Selesai(f) |
+|----------------------------------------|
+|      A1     |      1      |     4      |
+|      A2     |      3      |     5      |
+|      A3     |      0      |     6      |
+|      A4     |      5      |     7      | 
+|      A5     |      8      |     9      |
+|      A6     |      5      |     9      |
+
+
+## Langkah Solusi
+
+- [x] Urutkan berdasarkan waktu selesai → `A1, A2, A3, A4, A5, A6`
+- [x] Pilih **A1**
+- [ ] A2: ❌ tumpang tindih (mulai 3, A1 selesai 4)
+- [ ] A3: ❌ tumpang tindih (mulai 0)
+- [x] A4: ✔️ kompatibel (mulai 5 ≥ 4)
+- [x] A5: ✔️ kompatibel (mulai 8 ≥ 7)
+- [ ] A6: ❌ tumpang tindih (mulai 5 < 7)
     
-**Solusi optimal:** ```{A1, A4, A5}``` (3 aktivitas)
+**Solusi optimal:** `{A1, A4, A5}` (3 aktivitas)
 
 **Implementasi Kode :**
 ```cpp
@@ -52,14 +55,14 @@ using namespace std;
 struct Activity {
     int start, finish;
     int index;
-}
+};
 
 bool activityCompare(Activity s1, Activity s2) {
     return (s1.finish < s2.finish);
 }
 
 void printMaxActivities (vector<Activity>& arr, int n) {
-    sort(arr.begin(), arr.end(), activityCompare) :
+    sort(arr.begin(), arr.end(), activityCompare);
     cout << "Aktivitas yang terpilih: ";
 
     int i = 0;
@@ -92,16 +95,16 @@ int main() {
 ```
 **Output Kode :**
 
-```Aktivitas yang terpilih: A1 A4 A5```
+`Aktivitas yang terpilih: A1 A4 A5`
 
 **Analisis Kompleksitas**
 1. Kompleksitas Waktu:
-    - Pengurutan aktivitas berdasarkan waktu selesai: O(n log n)
-    - Pemilihan aktivitas: O(n)
-    - Total kompleksitas waktu: O(n log n)
+    - Pengurutan aktivitas berdasarkan waktu selesai: `O(n log n)`
+    - Pemilihan aktivitas: `O(n)`
+    - Total kompleksitas waktu: `O(n log n)`
 
 2. Kompleksitas Ruang:
-    - Menyimpan aktivitas: O(n)
+    - Menyimpan aktivitas: `O(n)`
     - Tidak memerlukan ruang tambahan yang signifikan selain untuk menyimpan input dan output
 
 **Aplikasi Dunia Nyata**
@@ -109,4 +112,4 @@ int main() {
 2. Jadwal meeting
 3. Jadwal proses CPU
 4. Rute kendaraan
-5. Alokasi bandwidth
+5. Alokasi bandwidth jaringan
