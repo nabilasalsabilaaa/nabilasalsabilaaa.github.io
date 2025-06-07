@@ -34,7 +34,7 @@ subset sums = {1, [3], 6, 2, 5, 4, 3}
 ---
 
 ### Variasi Masalah Subset Sum Problem
-1. Bounded Subset Sum Problem, setiap elemen dalam himpunan hanya dapat digunakan sekali untuk membentuk subset yang jumlahnya sama dengan target. 
+- Bounded Subset Sum Problem, setiap elemen dalam himpunan hanya dapat digunakan sekali untuk membentuk subset yang jumlahnya sama dengan target. 
 
 ```plaintext
 Contohnya :
@@ -43,7 +43,7 @@ Subset {4, 5} menghasilkan total 9
 Kita tidak boleh menggunakan 4 atau 5 lebih dari sekali
 ```
 
-2. Partition Problem, mencari subset dengan jumlah sama dengan setengah dari total seluruh elemen himpunan.
+- Partition Problem, mencari subset dengan jumlah sama dengan setengah dari total seluruh elemen himpunan.
 
 ```plaintext
 Contohnya :
@@ -53,7 +53,7 @@ Kita bisa buat dua subset :
 {11} dan {1, 5, 5} → keduanya berjumlah 11
 ```
 
-3. Exact k Elements Subset Sum, mencari subset yang jumlahnya sama dengan target dan terdiri dari tepat k elemen. 
+- Exact k Elements Subset Sum, mencari subset yang jumlahnya sama dengan target dan terdiri dari tepat k elemen. 
 
 ```plaintext
 Contohnya :
@@ -61,7 +61,7 @@ Set = {1, 2, 3, 4, 5}, Target = 9, k = 2
 Subset {4, 5} terdiri dari 2 elemen dan jumlahnya 9. Namun subset seperti {2, 3, 4} juga jumlahnya 9, tapi terdiri dari 3 elemen, tidak valid. 
 ```
 
-4. Unbounded Subset Sum Problem, setiap elemen boleh digunakan berulang kali untuk mencapai target. Ini berarti jika kita memiliki angka 3 dalam himpunan, maka kita bisa memakainya dua, tiga, atau bahkan lebih kali selama tidak melebihi target.
+- Unbounded Subset Sum Problem, setiap elemen boleh digunakan berulang kali untuk mencapai target. Ini berarti jika kita memiliki angka 3 dalam himpunan, maka kita bisa memakainya dua, tiga, atau bahkan lebih kali selama tidak melebihi target.
 
 ```plaintext
 Contohnya :
@@ -72,7 +72,7 @@ o 3 + 3 = 6
 o 2 × 1 + 4 = 6
 ```
 
-5. Multi-target Subset Sum Problem, mencari subset yang memenuhi lebih dari satu kriteria, misalnya jumlah total dan batas berat. 
+- Multi-target Subset Sum Problem, mencari subset yang memenuhi lebih dari satu kriteria, misalnya jumlah total dan batas berat. 
 
 ```plaintext
 Set barang:
@@ -84,7 +84,7 @@ Kombinasi Barang A + C → total harga 70, berat 1.5 kg → valid
 Tapi A + B → harga 100, berat 2.5 kg → tidak valid karena melebihi berat. 
 ```
 
-6. Approximate Subset Sum, tidak ada subset yang jumlahnya tepat sama dengan target, jadi dicari subset terbaik yang mendekati target, biasanya tidak boleh melebihi.
+- Approximate Subset Sum, tidak ada subset yang jumlahnya tepat sama dengan target, jadi dicari subset terbaik yang mendekati target, biasanya tidak boleh melebihi.
 
 ```plaintext
 Contohnya :
