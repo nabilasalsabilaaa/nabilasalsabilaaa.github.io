@@ -1,11 +1,10 @@
 ---
-
 title: Rangkuman Desain dan Analisis Algoritma
 date: 2025-06-07
-categories: \[Desain dan Analisis Algoritma]
-tags: \[DAA, rangkuman]
+categories: [Desain dan Analisis Algoritma]
+tags: [DAA, rangkuman]
 description: Kelompok 6 - Rat in a Maze
----------------------------------------
+---
 
 ## Rat in a Maze
 
@@ -34,24 +33,22 @@ Masalah ini dapat diselesaikan menggunakan algoritma **Backtracking**, yaitu men
 
 ---
 
-### Contoh Maze
+### Contoh
 
-```
-1 0 0 0
-1 1 0 1
-1 1 0 0
-0 1 1 1
-```
-
-Start: (0,0) → End: (3,3)
-
----
-
-### Visualisasi Simulasi
+Seekor tikut yang ditempatkan di (0,0) dalam matriks persegi berorde N * N. Tikus harus mencapai tujuan di (N- 1, N -1). Temukan semua kemungkinan jalur yang dapat diambil tikus untuk mencapai tujuan. Dalam satu jalur, tidak ada sel yang dapat dikunjungi lebih dari satu kali. Nilai 0 pada sel dalam matriks menunjukkan bahwa sel tersebut terhalang dan tikus tidak dapat bergerak ke sana, sedangkan nilai 1 pada sel dalam matriks menunjukkan bahwa tikus dapat melewatinya.
 
 <figure>
-  <img src="/assets/img/riam-1.png" alt="Simulasi Rat in a Maze">
-  <figcaption>Simulasi langkah demi langkah tikus mencari jalan keluar.</figcaption>
+  <img src="/assets/img/riam-1.png" width="100" alt="Simulasi Rat in a Maze">
+</figure>
+
+
+<figure>
+  <img src="/assets/img/riam-1.png" width="100" alt="Simulasi Rat in a Maze">
+  <figcaption>tulis cap.</figcaption>
+</figure>
+<figure>
+  <img src="/assets/img/riam-1.png" width="100" alt="Simulasi Rat in a Maze">
+  <figcaption>tulis cap.</figcaption>
 </figure>
 
 ---
@@ -127,15 +124,3 @@ class Solution {
 * Masalah optimisasi dalam AI
 
 ---
-
-### Simulasi Online (Opsional)
-
-> 🔗 Coba simulasi: [https://visualgo.net/en/backtracking](https://visualgo.net/en/backtracking)
-
-Jika ingin membuat simulasi interaktif sendiri, bisa menggunakan JavaScript dan HTML Grid dengan tombol “Next Step” untuk memvisualisasikan tiap gerakan tikus.
-
----
-
-**Kelompok 6 - DAA 2025**
-
-> Rangkuman ini disusun oleh Kelompok 6 sebagai dokumentasi pembelajaran mata kuliah Desain dan Analisis Algoritma.
