@@ -35,11 +35,13 @@ Masalah ini dapat diselesaikan menggunakan algoritma **Backtracking**, yaitu men
 
 ### Contoh
 
-Seekor tikut yang ditempatkan di (0,0) dalam matriks persegi berorde N * N. Tikus harus mencapai tujuan di (N- 1, N -1). Temukan semua kemungkinan jalur yang dapat diambil tikus untuk mencapai tujuan. Dalam satu jalur, tidak ada sel yang dapat dikunjungi lebih dari satu kali. Nilai 0 pada sel dalam matriks menunjukkan bahwa sel tersebut terhalang dan tikus tidak dapat bergerak ke sana, sedangkan nilai 1 pada sel dalam matriks menunjukkan bahwa tikus dapat melewatinya.
+<div style="display: flex; align-items: flex-start; gap: 20px;">
+  <img src="/assets/img/riam-1.png" alt="Maze Example" style="width: 200px; border-radius: 8px;">
+  <p>
+    Seekor tikut yang ditempatkan di (0,0) dalam matriks persegi berorde N * N. Tikus harus mencapai tujuan di (N-1, N-1). Temukan semua kemungkinan jalur yang dapat diambil tikus untuk mencapai tujuan. Dalam satu jalur, tidak ada sel yang dapat dikunjungi lebih dari satu kali. Nilai 0 pada sel dalam matriks menunjukkan bahwa sel tersebut terhalang dan tikus tidak dapat bergerak ke sana, sedangkan nilai 1 pada sel dalam matriks menunjukkan bahwa tikus dapat melewatinya.
+  </p>
+</div>
 
-<figure>
-  <img src="/assets/img/riam-1.png" width="100" alt="Simulasi Rat in a Maze">
-</figure>
 
 
 <figure>
