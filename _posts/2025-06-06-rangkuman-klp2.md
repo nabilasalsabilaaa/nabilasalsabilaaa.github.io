@@ -1,6 +1,6 @@
 ---
 title: Rangkuman Desain dan Analisis Algoritma
-date: 2025-06-06 10:22:00 +0800
+date: 2025-06-06
 categories: [Desain dan Analisis Algoritma]
 tags: [DAA, rangkuman]
 description: Kelompok 2 - Fractional Knapsack

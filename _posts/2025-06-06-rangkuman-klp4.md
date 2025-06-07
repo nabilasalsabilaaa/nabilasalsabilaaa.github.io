@@ -1,6 +1,6 @@
 ---
 title: Rangkuman Desain dan Analisis Algoritma
-date: 2025-05-05 07:30:00 +0800
+date: 2025-06-06
 categories: [Desain dan Analisis Algoritma]
 tags: [DAA, rangkuman]
 description: Kelompok 4 - N-Queens Problem
@@ -23,21 +23,21 @@ sama.
 
 ---
 
-**Tujuan**
+### Tujuan
 1. Menemukan semua konfigurasi penempatan ratu yang memenuhi syarat tidak saling menyerang.
 2. Mengembangkan dan menguji algoritma pencarian dan optimasi, seperti backtracking, DFS, heuristic search, atau algoritma genetika.
 3. Melatih logika pemrograman dan pemecahan masalah, terutama dalam konteks constraint satisfaction problem (CSP).
 
 ---
 
-**Aplikasi di Dunia Nyata**
+### Aplikasi di Dunia Nyata
 1. Penjadwalan tugas (di mana konflik harus dihindari),
 2. Penempatan modul dalam sirkuit elektronik,
 2. Pengalokasian sumber daya yang saling eksklusif
 
 ---
 
-**Implementasi Kode**
+### Implementasi Kode
 
 ```cpp
 /**
