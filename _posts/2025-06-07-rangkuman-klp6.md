@@ -36,7 +36,7 @@ Masalah ini dapat diselesaikan menggunakan algoritma **Backtracking**, yaitu men
 ### Contoh
 
 <div style="display: flex; align-items: flex-start; gap: 20px;">
-  <img src="/assets/img/riam-1.png" alt="Maze Example" style="width: 1000px; border-radius: 0px;">
+  <img src="/assets/img/riam-1.png" alt="Maze Example" style="width: 1200px; border-radius: 0px;">
   <p>
     Seekor tikus yang ditempatkan di (0,0) dalam matriks persegi berorde N * N. Tikus harus mencapai tujuan di (N-1, N-1). Temukan semua kemungkinan jalur yang dapat diambil tikus untuk mencapai tujuan. Dalam satu jalur, tidak ada sel yang dapat dikunjungi lebih dari satu kali. Nilai 0 pada sel dalam matriks menunjukkan bahwa sel tersebut terhalang dan tikus tidak dapat bergerak ke sana, sedangkan nilai 1 pada sel dalam matriks menunjukkan bahwa tikus dapat melewatinya.
   </p>
@@ -49,7 +49,7 @@ Masalah ini dapat diselesaikan menggunakan algoritma **Backtracking**, yaitu men
 >  Tikus mulai di posisi (0, 0) dan harus mencapai (3, 3) (pojok kanan bawah) 
 
 <div style="display: flex; align-items: flex-start; gap: 20px;">
-  <img src="/assets/img/riam-2.png" alt="Maze Example" style="width: 1000px; border-radius: 0px;">
+  <img src="/assets/img/riam-2.png" alt="Maze Example" style="width: 400px; border-radius: 0px;">
   <p>
     **Langkah 1:**  Coba gerakan ke arah
       - Bawah (D) → ke (1, 0)  = 1 ✅
@@ -58,7 +58,7 @@ Masalah ini dapat diselesaikan menggunakan algoritma **Backtracking**, yaitu men
 </div>
 
 <div style="display: flex; align-items: flex-start; gap: 20px;">
-  <img src="/assets/img/riam-3.png" alt="Maze Example" style="width: 1000px; border-radius: 0px;">
+  <img src="/assets/img/riam-3.png" alt="Maze Example" style="width: 400px; border-radius: 0px;">
   <p>
     **Langkah 2:**   Dari (1, 0)
       - Tandai (1, 0)
@@ -70,7 +70,7 @@ Masalah ini dapat diselesaikan menggunakan algoritma **Backtracking**, yaitu men
 </div>
 
 <div style="display: flex; align-items: flex-start; gap: 20px;">
-  <img src="/assets/img/riam-4.png" alt="Maze Example" style="width: 1000px; border-radius: 0px;">
+  <img src="/assets/img/riam-4.png" alt="Maze Example" style="width: 400px; border-radius: 0px;">
   <p>
      **Langkah 3:** Dari (1, 1)
         - Pilih arah:
@@ -78,10 +78,8 @@ Masalah ini dapat diselesaikan menggunakan algoritma **Backtracking**, yaitu men
   </p>
 </div>
 
-
-
 <div style="display: flex; align-items: flex-start; gap: 20px;">
-  <img src="/assets/img/riam-5.png" alt="Maze Example" style="width: 1000px; border-radius: 0px;">
+  <img src="/assets/img/riam-5.png" alt="Maze Example" style="width: 400px; border-radius: 0px;">
   <p>
       **Langkah 4:** Dari (2, 1)
         - Pilih arah:
@@ -90,7 +88,7 @@ Masalah ini dapat diselesaikan menggunakan algoritma **Backtracking**, yaitu men
 </div>
 
 <div style="display: flex; align-items: flex-start; gap: 20px;">
-  <img src="/assets/img/riam-6.png" alt="Maze Example" style="width: 1000px; border-radius: 0px;">
+  <img src="/assets/img/riam-6.png" alt="Maze Example" style="width: 400px; border-radius: 0px;">
   <p>
       **Langkah 5:** Dari (3, 1)
         - Pilih arah:
@@ -99,7 +97,7 @@ Masalah ini dapat diselesaikan menggunakan algoritma **Backtracking**, yaitu men
 </div>
 
 <div style="display: flex; align-items: flex-start; gap: 20px;">
-  <img src="/assets/img/riam-7.png" alt="Maze Example" style="width: 1000px; border-radius: 0px;">
+  <img src="/assets/img/riam-7.png" alt="Maze Example" style="width: 400px; border-radius: 0px;">
   <p>
        **Langkah 6:** Dari (3, 2)
         - Pilih arah:
@@ -111,16 +109,6 @@ Masalah ini dapat diselesaikan menggunakan algoritma **Backtracking**, yaitu men
 Representasi Arah :
 DRDDRR
 ```
-
-
-<figure>
-  <img src="/assets/img/riam-1.png" width="100" alt="Simulasi Rat in a Maze">
-  <figcaption>tulis cap.</figcaption>
-</figure>
-<figure>
-  <img src="/assets/img/riam-1.png" width="100" alt="Simulasi Rat in a Maze">
-  <figcaption>tulis cap.</figcaption>
-</figure>
 
 ---
 
