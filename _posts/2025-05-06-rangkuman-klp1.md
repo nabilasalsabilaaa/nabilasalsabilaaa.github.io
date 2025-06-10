@@ -1,9 +1,9 @@
 ---
-title: Rangkuman Desain dan Analisis Algoritma
+title: Activity Selection Problem
 date: 2025-05-05
 categories: [Desain dan Analisis Algoritma]
 tags: [DAA, rangkuman]
-description: Kelompok 1 - Activity Selection Problem
+description: Kelompok 1 
 ---
 
 ## Activity Selection Problem

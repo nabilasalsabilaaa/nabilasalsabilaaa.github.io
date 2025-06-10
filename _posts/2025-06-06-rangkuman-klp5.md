@@ -1,9 +1,9 @@
 ---
-title: Rangkuman Desain dan Analisis Algoritma
+title: Subset Sum Problem
 date: 2025-06-06
 categories: [Desain dan Analisis Algoritma]
 tags: [DAA, rangkuman]
-description: Kelompok 5 - Subset Sum Problem
+description: Kelompok 5
 ---
 
 ## Subset Sum Problem

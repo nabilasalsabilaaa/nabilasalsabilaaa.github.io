@@ -1,9 +1,9 @@
 ---
-title: Rangkuman Desain dan Analisis Algoritma
+title: Huffman Coding
 date: 2025-06-06
 categories: [Desain dan Analisis Algoritma]
 tags: [DAA, rangkuman]
-description: Kelompok 3 - Huffman Coding
+description: Kelompok 3
 ---
 
 ## Huffman Coding

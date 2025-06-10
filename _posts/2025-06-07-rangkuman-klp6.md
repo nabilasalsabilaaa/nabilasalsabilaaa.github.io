@@ -1,9 +1,9 @@
 ---
-title: Rangkuman Desain dan Analisis Algoritma
+title: Rat in a Maze
 date: 2025-06-07
 categories: [Desain dan Analisis Algoritma]
 tags: [DAA, rangkuman]
-description: Kelompok 6 - Rat in a Maze
+description: Kelompok 6
 ---
 
 ## Rat in a Maze
@@ -36,7 +36,7 @@ Masalah ini dapat diselesaikan menggunakan algoritma **Backtracking**, yaitu men
 ### Contoh
 
 <div style="display: flex; align-items: flex-start; gap: 20px;">
-  <img src="/assets/img/riam-1.png" alt="Maze Example" style="width: 1200px; border-radius: 0px;">
+  <img src="/assets/img/riam-1.png" alt="Maze Example" style="width: 1700px; border-radius: 0px;">
   <p>
     Seekor tikus yang ditempatkan di (0,0) dalam matriks persegi berorde N * N. Tikus harus mencapai tujuan di (N-1, N-1). Temukan semua kemungkinan jalur yang dapat diambil tikus untuk mencapai tujuan. Dalam satu jalur, tidak ada sel yang dapat dikunjungi lebih dari satu kali. Nilai 0 pada sel dalam matriks menunjukkan bahwa sel tersebut terhalang dan tikus tidak dapat bergerak ke sana, sedangkan nilai 1 pada sel dalam matriks menunjukkan bahwa tikus dapat melewatinya.
   </p>
@@ -51,57 +51,43 @@ Masalah ini dapat diselesaikan menggunakan algoritma **Backtracking**, yaitu men
 <div style="display: flex; align-items: flex-start; gap: 20px;">
   <img src="/assets/img/riam-2.png" alt="Maze Example" style="width: 400px; border-radius: 0px;">
   <p>
-    **Langkah 1:**  Coba gerakan ke arah
-      - Bawah (D) → ke (1, 0)  = 1 ✅
-      - Kanan (R) → ke (0, 1) = 0 ❌
+    Langkah 1: Coba gerakan ke arah: Bawah (D) → ke (1, 0)  = 1 ✅ dan Kanan (R) → ke (0, 1) = 0 ❌
   </p>
 </div>
 
 <div style="display: flex; align-items: flex-start; gap: 20px;">
-  <img src="/assets/img/riam-3.png" alt="Maze Example" style="width: 400px; border-radius: 0px;">
+  <img src="/assets/img/riam-3.png" alt="Maze Example" style="width: 530px; border-radius: 0px;">
   <p>
-    **Langkah 2:**   Dari (1, 0)
-      - Tandai (1, 0)
-      - Pilih arah:
-        Bawah (D) → (2, 0) = 1 ✅
-        Kanan (R) → (1, 1) = 1 ✅
+    Langkah 2: Dari (1, 0) : Tandai (1, 0) lalu Pilih arah: Bawah (D) → (2, 0) = 1 ✅ dan Kanan (R) → (1, 1) = 1 ✅
     Pilih salah satu : R
   </p>
 </div>
 
 <div style="display: flex; align-items: flex-start; gap: 20px;">
-  <img src="/assets/img/riam-4.png" alt="Maze Example" style="width: 400px; border-radius: 0px;">
+  <img src="/assets/img/riam-4.png" alt="Maze Example" style="width: 270px; border-radius: 0px;">
   <p>
-     **Langkah 3:** Dari (1, 1)
-        - Pilih arah:
-          Bawah (D) → (2, 1) = 1 ✅
+     Langkah 3: Dari (1, 1) lalunPilih arah: Bawah (D) → (2, 1) = 1 ✅
   </p>
 </div>
 
 <div style="display: flex; align-items: flex-start; gap: 20px;">
-  <img src="/assets/img/riam-5.png" alt="Maze Example" style="width: 400px; border-radius: 0px;">
+  <img src="/assets/img/riam-5.png" alt="Maze Example" style="width: 270px; border-radius: 0px;">
   <p>
-      **Langkah 4:** Dari (2, 1)
-        - Pilih arah:
-          Bawah (D) → (3, 1) = 1 ✅
+      Langkah 4: Dari (2, 1) lalu Pilih arah: Bawah (D) → (3, 1) = 1 ✅
   </p>
 </div>
 
 <div style="display: flex; align-items: flex-start; gap: 20px;">
-  <img src="/assets/img/riam-6.png" alt="Maze Example" style="width: 400px; border-radius: 0px;">
+  <img src="/assets/img/riam-6.png" alt="Maze Example" style="width: 270px; border-radius: 0px;">
   <p>
-      **Langkah 5:** Dari (3, 1)
-        - Pilih arah:
-          Kanan (R) → (3, 2) = 1 ✅
+      Langkah 5: Dari (3, 1) lalu Pilih arah: Kanan (R) → (3, 2) = 1 ✅
   </p>
 </div>
 
 <div style="display: flex; align-items: flex-start; gap: 20px;">
-  <img src="/assets/img/riam-7.png" alt="Maze Example" style="width: 400px; border-radius: 0px;">
+  <img src="/assets/img/riam-7.png" alt="Maze Example" style="width: 270px; border-radius: 0px;">
   <p>
-       **Langkah 6:** Dari (3, 2)
-        - Pilih arah:
-          Kanan (R) → (3, 3) = 1 ✅
+       Langkah 6: Dari (3, 2) lalu Pilih arah: Kanan (R) → (3, 3) = 1 ✅
   </p>
 </div>
 

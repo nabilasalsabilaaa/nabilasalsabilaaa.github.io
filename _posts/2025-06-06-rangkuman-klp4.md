@@ -1,9 +1,9 @@
 ---
-title: Rangkuman Desain dan Analisis Algoritma
+title: N-Queens Problem
 date: 2025-06-06
 categories: [Desain dan Analisis Algoritma]
 tags: [DAA, rangkuman]
-description: Kelompok 4 - N-Queens Problem
+description: Kelompok 4
 ---
 
 ## N-Queens Problem
